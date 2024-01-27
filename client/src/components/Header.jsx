@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import { FaSearch } from "react-icons/fa"
 const Header = () => {
   return (
     <header className="bg-slate-200 shadow-md">
@@ -11,12 +11,13 @@ const Header = () => {
           </h1>
         </Link>
 
-        <form className="bg-slate-100 p-3 rounded-lg flex items-center">
+        <form className="bg-slate-100 p-3 rounded-xl flex items-center">
           <input
             type="text"
             placeholder="Search"
             className="bg-transparent focus:outline-none w-24 sm:w-64"
           />
+          <FaSearch className="text-slate-700 hover:cursor-pointer size-5" />
         </form>
         <ul className="flex gap-4">
           <Link to="/">
